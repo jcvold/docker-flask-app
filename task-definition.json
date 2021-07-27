@@ -1,0 +1,43 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:559717033685:task-definition/ECS-Catnip-Demo-Task:3",
+    "containerDefinitions": [
+        {
+            "name": "CatnipImage",
+            "image": "jcvold/catnip",
+            "cpu": 0,
+            "memory": 500,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 80,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": []
+        }
+    ],
+    "family": "ECS-Catnip-Demo-Task",
+    "taskRoleArn": "arn:aws:iam::559717033685:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::559717033685:role/ecsTaskExecutionRole",
+    "revision": 3,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EXTERNAL",
+        "EC2"
+    ],
+    "requiresCompatibilities": [
+        "EC2"
+    ],
+    "registeredAt": "2021-07-27T10:10:23.280000-05:00",
+    "registeredBy": "arn:aws:iam::559717033685:user/john"
+}
