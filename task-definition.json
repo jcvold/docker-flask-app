@@ -4,7 +4,7 @@
             "name": "CatnipImage",
             "image": "jcvold/catnip",
             "cpu": 0,
-            "memory": 256,
+            "memory": 0,
             "portMappings": [
                 {
                     "containerPort": 5000,
@@ -19,12 +19,10 @@
         }
     ],
     "family": "ECS-Catnip-Demo-Task",
-    "taskRoleArn": "arn:aws:iam::559717033685:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::559717033685:role/ecsTaskExecutionRole",
     "volumes": [],
     "placementConstraints": [],
     "requiresCompatibilities": [
         "EC2"
-    ],
-    "registeredBy": "arn:aws:iam::559717033685:user/john"
+    ]
 }
