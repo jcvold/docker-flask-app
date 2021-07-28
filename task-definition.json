@@ -4,7 +4,7 @@
             "name": "CatnipImage",
             "image": "jcvold/catnip",
             "cpu": 0,
-            "memory": 0,
+            "memory": 256,
             "portMappings": [
                 {
                     "containerPort": 5000,
